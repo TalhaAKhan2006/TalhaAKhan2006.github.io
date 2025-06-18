@@ -277,3 +277,88 @@ footer {
 section h2 {
   text-align: center;
 }
+
+/* Projects Section Layout */
+#projects {
+  padding: 40px 20px;
+  background-color: #f5faff;
+}
+
+#projects h2 {
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0a3d62;
+}
+
+.project-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.project-bubble {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  padding: 24px;
+  width: 100%;
+  gap: 24px;
+  transition: transform 0.2s;
+}
+
+.project-bubble:hover {
+  transform: scale(1.015);
+}
+
+.project-image {
+  flex-shrink: 0;
+  width: 250px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-text h3 {
+  margin: 0;
+  font-size: 1.6em;
+  color: #0a3d62;
+}
+
+.project-caption {
+  font-size: 1em;
+  font-weight: 500;
+  color: #3c6382;
+  margin: 4px 0 12px 0;
+}
+
+.project-text p {
+  font-size: 1em;
+  color: #4b4b4b;
+  line-height: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-bubble {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-text {
+    margin-top: 16px;
+  }
+}
