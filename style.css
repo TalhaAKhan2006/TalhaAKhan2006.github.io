@@ -1,55 +1,53 @@
-/* General Styles */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
-  color: #00274C;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
 nav {
-  background-color: #00274C;
-  padding: 1rem;
+  background-color: #222;
+  padding: 1rem 0;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 nav a {
+  color: #eee;
   text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: 700;
 }
 
-nav a:hover,
-nav a.active {
+nav a.active,
+nav a:hover {
   color: #68e1fd;
 }
 
 .container {
-  max-width: 1100px;
-  margin: auto;
   padding: 2rem;
-}
-
-h1, h2, h3, h4 {
-  color: #00274C;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .about-section {
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .about-section img {
   width: 150px;
-  height: 150px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
@@ -57,103 +55,103 @@ h1, h2, h3, h4 {
 .about-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
-.about-image {
-  text-align: center;
+.about-image svg {
+  max-width: 100%;
+  height: auto;
 }
 
 .about-text {
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
 }
 
-.experience-item, .project-card {
-  background: white;
-  border-left: 5px solid #00274C;
+.experience-item,
+.project-card {
+  background: #fff;
+  margin-bottom: 1.5rem;
   padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-left: 5px solid #68e1fd;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .skill {
-  background-color: #00274C;
-  color: white;
+  background: #68e1fd;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-/* Contact Section */
-#contact {
-  text-align: center;
-  margin-top: 3rem;
+  color: white;
+  font-weight: bold;
 }
 
 .contact-grid {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
-.contact-entry {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s, filter 0.3s;
+/* Social Media Colors */
+.facebook i {
+  color: #1877f2;
 }
 
-/* Social Icon Styles */
-.social-icon i {
+.instagram i {
+  color: #e1306c;
+}
+
+.linkedin i {
+  color: #0077b5;
+}
+
+.github i {
+  color: #000;
+}
+
+.email i {
+  color: #d93025;
+}
+
+/* Social Icons Base Style */
+.social-icon {
   font-size: 2.5rem;
-  transition: transform 0.2s, filter 0.3s;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.social-icon.facebook i   { color: #1877F2; }
-.social-icon.instagram i { color: #E4405F; }
-.social-icon.linkedin i  { color: #0077B5; }
-.social-icon.email i     { color: #EA4335; }
-.social-icon.github i    { color: #000000; }
-
-.social-icon:hover i {
+.social-icon:hover {
   transform: scale(1.2);
-  filter: brightness(1.2) saturate(1.2);
-}
-
-/* Attribution text in About */
-.attribution {
-  font-size: 0.8rem;
-  color: #6c757d;
-  margin-top: 0.5rem;
+  filter: hue-rotate(30deg);
 }
 
 footer {
-  background-color: #00274C;
-  color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 4rem;
+  padding: 2rem 0;
+  background-color: #222;
+  color: #eee;
+  margin-top: 3rem;
 }
 
-/* Responsive Tweaks */
-@media (min-width: 768px) {
-  .about-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .about-text {
-    text-align: left;
-  }
+/* Attribution Styling */
+.attribution {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: #999;
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: #68e1fd;
 }
