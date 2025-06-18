@@ -3,67 +3,67 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa; /* Light gray background */
   color: #212529; /* Dark text color for readability */
-}
-
-/* === Header Styling === */
-header {
-  background-color: #00274C !important; /* Dark blue background */
-  color: white; /* Ensure header text is white */
-  text-align: center; /* Center header text */
-  padding: 1rem 0; /* Vertical padding for spacing */
-}
-
-header h1 {
-  font-family: 'Montserrat', sans-serif; /* Google Font */
-  font-weight: 600;
-  margin-bottom: 0.25rem; /* Slight spacing below h1 */
-}
-
-header p {
-  margin: 0; /* Remove default margin */
-  font-size: 1.25rem; /* Slightly larger for subtitle */
+  margin: 0;
 }
 
 /* === Typography === */
 h1, h2, h3, h4, h5 {
   font-weight: 600;
-  margin-top: 0; /* Remove default top margin for better spacing control */
+  margin-top: 0;
+}
+
+/* === Header Styling === */
+header {
+  background-color: #00274C !important; /* Navy background */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 /* === Navbar Styling === */
 .navbar {
-  background-color: #00274C !important; /* Match header background */
+  background-color: #00274C !important;
 }
 
-nav a.nav-link {
+.navbar .nav-link {
   font-weight: 500;
-  color: white; /* Ensure links are white by default */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .nav-link.active,
 .nav-link:hover {
-  color: #FFCB05 !important; /* Yellow highlight on hover and active */
+  color: #FFCB05 !important; /* Maize yellow for hover/active */
 }
 
-/* === Main Content Padding === */
+/* === Main Section Padding === */
 main {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 /* === Footer Styling === */
 footer {
-  background-color: #00274C !important; /* Match header/navbar background */
-  color: white; /* White text for contrast */
-  margin-top: 2rem;
-  padding: 1rem 0; /* Padding for spacing */
+  background-color: #00274C !important;
+  color: white;
   text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
 
 /* === Carousel Caption Overlay === */
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding: 1rem;
 }
@@ -73,15 +73,15 @@ footer {
   font-weight: 600;
 }
 
-/* === Unordered Lists === */
+/* === Lists === */
 ul {
-  list-style-type: square; /* Square bullet points */
-  padding-left: 1.5rem; /* Indent list */
-  margin-top: 0; /* Remove default margin for better spacing */
-  margin-bottom: 1rem; /* Space below lists */
+  list-style-type: square;
+  padding-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-/* === Contact Icons and Entries === */
+/* === Contact Section === */
 .contact-icon {
   font-size: 3.5rem;
 }
@@ -89,11 +89,11 @@ ul {
 .contact-entry {
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 1rem; /* Space between entries */
+  margin-bottom: 1rem;
 }
 
-/* === Social Media Icon Colors === */
+/* === Social Media Colors === */
 .facebook-icon { color: #1877f2; }
 .instagram-icon { color: #e4405f; }
-.gmail-icon { color: #d44638; }
+.gmail-icon    { color: #d44638; }
 .linkedin-icon { color: #0a66c2; }
