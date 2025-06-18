@@ -1,8 +1,9 @@
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+/* Google Font (already linked in HTML head) */
 header h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600; /* semi-bold */
+  font-weight: 600;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
@@ -23,6 +24,7 @@ main {
 }
 
 footer {
+  background-color: #00274C !important;
   margin-top: 2rem;
 }
 
@@ -44,27 +46,30 @@ ul {
 .contact-icon {
   font-size: 3.5rem;
 }
+
 .contact-entry {
   font-size: 1.5rem;
   text-align: center;
 }
+
 .facebook-icon { color: #1877f2; }
 .instagram-icon { color: #e4405f; }
 .gmail-icon { color: #d44638; }
 .linkedin-icon { color: #0a66c2; }
+
 header {
   background-color: #00274C !important;
 }
+
 header p {
   color: white;
 }
-footer {
-  background-color: #00274C !important;
-}
+
 .navbar {
   background-color: #00274C !important;
 }
-.nav-link.active, .nav-link:hover {
+
+.nav-link.active,
+.nav-link:hover {
   color: #FFCB05 !important;
 }
-
