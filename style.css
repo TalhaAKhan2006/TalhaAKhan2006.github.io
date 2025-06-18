@@ -159,3 +159,36 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-image {
+  flex: 0 0 250px; /* fixed width for SVG container */
+}
+
+.about-image svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+.attribution a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.about-text {
+  flex: 1;
+}
