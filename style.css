@@ -121,6 +121,28 @@ p {
   text-decoration: underline;
 }
 
+/* Name around image */
+.about-name-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.cursive-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #fff;
+  white-space: nowrap;
+}
+.left-name {
+  text-align: right;
+}
+.right-name {
+  text-align: left;
+}
+
 /* Experience */
 .experience-item {
   margin-bottom: 1.5rem;
@@ -228,6 +250,22 @@ p {
   filter: brightness(1.2) saturate(1.2);
 }
 
+/* Email display beneath contact icons */
+.email-display {
+  text-align: center;
+  margin-top: 1rem;
+}
+.email-display a {
+  color: #1da1f2;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+.email-display a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -238,26 +276,4 @@ footer {
 }
 section h2 {
   text-align: center;
-}
-
-/* Name around image */
-.about-name-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-.cursive-name {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
-  color: #fff;
-  white-space: nowrap;
-}
-.left-name {
-  text-align: right;
-}
-.right-name {
-  text-align: left;
 }
