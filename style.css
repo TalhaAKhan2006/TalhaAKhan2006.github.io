@@ -17,6 +17,30 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.about-name-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.cursive-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: white; /* <- set text color to white */
+  white-space: nowrap;
+}
+
+
+.left-name {
+  text-align: right;
+}
+
+.right-name {
+  text-align: left;
+}
 
 /* Navbar */
 nav {
