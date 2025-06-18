@@ -83,3 +83,7 @@ ul {
 .instagram-icon { color: #e4405f; }
 .gmail-icon { color: #d44638; }
 .linkedin-icon { color: #0a66c2; }
+
+.navbar {
+  background-color: #00274C !important;
+}
