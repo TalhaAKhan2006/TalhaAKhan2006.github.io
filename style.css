@@ -40,3 +40,31 @@ ul {
   list-style-type: square;
   padding-left: 1.5rem;
 }
+
+.contact-icon {
+  font-size: 3.5rem;
+}
+.contact-entry {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.facebook-icon { color: #1877f2; }
+.instagram-icon { color: #e4405f; }
+.gmail-icon { color: #d44638; }
+.linkedin-icon { color: #0a66c2; }
+header {
+  background-color: #00274C !important;
+}
+header p {
+  color: white;
+}
+footer {
+  background-color: #00274C !important;
+}
+.navbar {
+  background-color: #00274C !important;
+}
+.nav-link.active, .nav-link:hover {
+  color: #FFCB05 !important;
+}
+
