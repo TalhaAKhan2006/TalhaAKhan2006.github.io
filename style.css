@@ -7,6 +7,26 @@
 html {
   scroll-behavior: smooth;
 }
+.about-name-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* spacing between name and image */
+  margin-top: 2rem;
+}
+
+.cursive-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: white;
+  white-space: nowrap;
+}
+
+.about-image {
+  max-width: 250px; /* Adjust size as needed */
+  height: auto;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
