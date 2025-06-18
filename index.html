@@ -4,39 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Talha Khan - Personal Website</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Your custom stylesheet -->
   <link rel="stylesheet" href="styles.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-    <style>
-    .contact-icon {
-      font-size: 3.5rem;
-    }
-    .contact-entry {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    header {
-      background-color: #00274C !important;
-    }
-    header p {
-      color: white;
-    }
-    footer {
-      background-color: #00274C !important;
-    }
-    .navbar {
-      background-color: #00274C !important;
-    }
-    .nav-link.active, .nav-link:hover {
-      color: #FFCB05 !important;
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="bg-dark text-white text-center py-4">
+  <header class="text-white text-center py-4">
     <h1>Talha Khan</h1>
     <p>Electrical Engineering Student | Robotics Enthusiast | Developer</p>
   </header>
@@ -49,18 +29,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -100,14 +72,15 @@
   </div>
 
   <!-- Footer -->
- <footer>
-  <p>
-    Talha Khan<br />
-    Phone: <a href="tel:+17347401486" style="color: inherit; text-decoration: none;">+1 (734) 740-1486</a><br />
-    Email: <a href="mailto:EE.TalhaKhan@gmail.com" style="color: inherit; text-decoration: none;">EE.TalhaKhan@gmail.com</a>
-  </p>
-</footer>
+  <footer class="text-white text-center py-4">
+    <p>
+      Talha Khan<br />
+      Phone: <a href="tel:+17347401486" class="text-white text-decoration-none">+1 (734) 740-1486</a><br />
+      Email: <a href="mailto:EE.TalhaKhan@gmail.com" class="text-white text-decoration-none">EE.TalhaKhan@gmail.com</a>
+    </p>
+  </footer>
 
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
