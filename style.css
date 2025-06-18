@@ -18,6 +18,18 @@ a {
   text-decoration: none;
 }
 
+/* Fade-in on scroll */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
 /* Navbar */
 nav {
   position: sticky;
@@ -80,14 +92,16 @@ p {
 }
 .about-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .about-image {
-  flex: 0 0 250px;
+  flex: 0 0 auto;
 }
 .about-image svg {
   width: 100%;
@@ -105,27 +119,6 @@ p {
 .attribution a {
   color: #ccc;
   text-decoration: underline;
-}
-
-/* About name and image section */
-.about-name-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: nowrap; /* keep everything on one line */
-}
-.cursive-name {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
-  color: #ffffff; /* accent color */
-  white-space: nowrap;
-}
-.left-name {
-  text-align: right;
-}
-.right-name {
-  text-align: left;
 }
 
 /* Experience */
@@ -192,7 +185,6 @@ p {
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-
 .contact-entry.social-icon {
   background: transparent;
   box-shadow: none;
@@ -246,4 +238,26 @@ footer {
 }
 section h2 {
   text-align: center;
+}
+
+/* Name around image */
+.about-name-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.cursive-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #fff;
+  white-space: nowrap;
+}
+.left-name {
+  text-align: right;
+}
+.right-name {
+  text-align: left;
 }
