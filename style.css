@@ -5,8 +5,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: #222;
-  background: #f9f9f9;
+  color: white;               /* changed from #222 to white for contrast */
+  background: #001f3f;        /* navy background */
 }
 a {
   color: inherit;
@@ -16,10 +16,11 @@ a {
 nav {
   position: sticky;
   top: 0;
-  background: #24292e;
+  background: #001f3f;        /* navy background */
   padding: 1rem 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* subtle light shadow */
+  color: white;               /* ensure text inside nav is white */
 }
 nav ul {
   list-style: none;
@@ -81,7 +82,7 @@ p {
 }
 .experience-item span {
   font-style: italic;
-  color: #555;
+  color: #bbb;               /* changed from #555 to lighter for dark bg */
   font-size: 0.9rem;
 }
 /* Projects */
@@ -96,17 +97,18 @@ p {
   }
 }
 .project-card {
-  background: #fff;
+  background: #012a5a;         /* slightly lighter navy */
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
 }
 .project-card:hover {
-  box-shadow: 0 5px 15px rgb(0 0 0 / 0.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .project-card h4 {
   margin-bottom: 0.5rem;
+  color: #bbe1fa;             /* lighter blue for headings */
 }
 /* Skills */
 .skills-list {
@@ -131,16 +133,17 @@ p {
   text-align: center;
 }
 .contact-entry {
-  background: white;
+  background: #012a5a;         /* slightly lighter navy */
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
   width: 140px;
+  color: white;
 }
 .contact-entry:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 .contact-icon {
   font-size: 2.4rem;
@@ -152,8 +155,8 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: #555;
-  border-top: 1px solid #ddd;
+  color: #bbb;                /* lighter for dark bg */
+  border-top: 1px solid #0366d6;
 }
 /* Smooth scroll */
 html {
@@ -180,12 +183,12 @@ html {
 
 .attribution {
   font-size: 0.75rem;
-  color: #666;
+  color: #bbb;
   margin-top: 8px;
 }
 
 .attribution a {
-  color: #666;
+  color: #bbb;
   text-decoration: underline;
 }
 
