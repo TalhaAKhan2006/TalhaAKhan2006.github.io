@@ -1,3 +1,8 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* semi-bold */
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
