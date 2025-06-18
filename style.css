@@ -1,67 +1,92 @@
 /* Reset */
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
 }
+
+/* Body and background */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: white;               /* changed from #222 to white for contrast */
-  background: #001f3f;        /* navy background */
+  color: white;               /* Text color changed to white for contrast */
+  background: #00274C;        /* Background set to your custom navy blue */
 }
+
+/* Links */
 a {
   color: inherit;
   text-decoration: none;
 }
-/* Navbar */
+
+/* Navbar styles */
 nav {
   position: sticky;
   top: 0;
-  background: #001f3f;        /* navy background */
+  background: #00274C;        /* Navbar background navy blue */
   padding: 1rem 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* subtle light shadow */
-  color: white;               /* ensure text inside nav is white */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+  color: white;
 }
+
+/* Navbar list */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
+
+/* Navbar items */
 nav ul li {
   font-weight: 700;
   font-size: 1rem;
 }
+
+/* Navbar links */
 nav ul li a {
   color: #eee;
   transition: color 0.3s ease;
 }
+
+/* Navbar hover and active link */
 nav ul li a:hover,
 nav ul li a.active {
-  color: #0366d6;
+  color: #0366d6;            /* Accent blue for hover */
 }
-/* Container */
+
+/* Main container */
 .container {
   max-width: 900px;
   margin: 2rem auto 4rem auto;
   padding: 0 1rem;
 }
+
+/* Section spacing */
 section {
   margin-bottom: 4rem;
 }
+
+/* Headings */
 h1, h2, h3 {
-  color: #0366d6;
+  color: #0366d6;            /* Accent blue for headings */
   margin-bottom: 1rem;
   font-weight: 700;
 }
+
+/* Paragraphs */
 p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
-/* About Section */
+
+/* About section center alignment */
 #about {
   text-align: center;
 }
+
+/* About profile image */
 #about img {
   width: 140px;
   height: 140px;
@@ -71,51 +96,68 @@ p {
   border: 3px solid #0366d6;
   box-shadow: 0 4px 8px rgba(3, 102, 214, 0.3);
 }
-/* Experience */
+
+/* Experience item styles */
 .experience-item {
   margin-bottom: 1.5rem;
   border-left: 4px solid #0366d6;
   padding-left: 1rem;
 }
+
+/* Experience headings */
 .experience-item h3 {
   margin-bottom: 0.25rem;
 }
+
+/* Experience date/style */
 .experience-item span {
   font-style: italic;
-  color: #bbb;               /* changed from #555 to lighter for dark bg */
+  color: #bbb;               /* Slightly lighter for readability */
   font-size: 0.9rem;
 }
-/* Projects */
+
+/* Projects list grid */
 .projects-list {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr;
 }
+
+/* Projects grid adjustment for wider screens */
 @media(min-width: 600px) {
   .projects-list {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Project card style */
 .project-card {
-  background: #012a5a;         /* slightly lighter navy */
+  background: #003366;       /* Slightly lighter navy for contrast */
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
+  color: white;              /* Text color white for readability */
 }
+
+/* Project card hover effect */
 .project-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
+
+/* Project card heading */
 .project-card h4 {
   margin-bottom: 0.5rem;
-  color: #bbe1fa;             /* lighter blue for headings */
 }
-/* Skills */
+
+/* Skills list flex wrap */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+
+/* Individual skill badge */
 .skill {
   background: #0366d6;
   color: white;
@@ -124,7 +166,8 @@ p {
   font-weight: 600;
   font-size: 0.9rem;
 }
-/* Contact */
+
+/* Contact grid layout */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -132,8 +175,10 @@ p {
   justify-items: center;
   text-align: center;
 }
+
+/* Contact entry card */
 .contact-entry {
-  background: #012a5a;         /* slightly lighter navy */
+  background: #003366;       /* Slightly lighter navy for contrast */
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -141,27 +186,35 @@ p {
   width: 140px;
   color: white;
 }
+
+/* Contact entry hover */
 .contact-entry:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
+/* Contact icon */
 .contact-icon {
   font-size: 2.4rem;
   margin-bottom: 0.5rem;
   color: #0366d6;
 }
-/* Footer */
+
+/* Footer styles */
 footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: #bbb;                /* lighter for dark bg */
+  color: #bbb;
   border-top: 1px solid #0366d6;
 }
-/* Smooth scroll */
+
+/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
+
+/* About container flex for image and text */
 .about-container {
   display: flex;
   align-items: flex-start;
@@ -171,27 +224,32 @@ html {
   padding: 20px;
 }
 
+/* About image container */
 .about-image {
   flex: 0 0 250px; /* fixed width for SVG container */
 }
 
+/* SVG image responsiveness */
 .about-image svg {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Attribution text */
 .attribution {
   font-size: 0.75rem;
-  color: #bbb;
+  color: #ccc;
   margin-top: 8px;
 }
 
+/* Attribution links */
 .attribution a {
-  color: #bbb;
+  color: #ccc;
   text-decoration: underline;
 }
 
+/* About text container */
 .about-text {
   flex: 1;
 }
