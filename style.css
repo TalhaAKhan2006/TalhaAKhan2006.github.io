@@ -112,7 +112,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+
   flex-wrap: nowrap; /* keep everything on one line */
 }
 .cursive-name {
