@@ -1,74 +1,87 @@
 /* === Global Font Setup === */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #212529; /* Dark text color for readability */
 }
 
-/* Header Styling */
+/* === Header Styling === */
 header {
-  background-color: #00274C !important;
+  background-color: #00274C !important; /* Dark blue background */
+  color: white; /* Ensure header text is white */
+  text-align: center; /* Center header text */
+  padding: 1rem 0; /* Vertical padding for spacing */
 }
 
 header h1 {
   font-family: 'Montserrat', sans-serif; /* Google Font */
   font-weight: 600;
+  margin-bottom: 0.25rem; /* Slight spacing below h1 */
 }
 
 header p {
-  color: white;
+  margin: 0; /* Remove default margin */
+  font-size: 1.25rem; /* Slightly larger for subtitle */
 }
 
-/* Typography */
+/* === Typography === */
 h1, h2, h3, h4, h5 {
   font-weight: 600;
+  margin-top: 0; /* Remove default top margin for better spacing control */
 }
 
-/* Navbar Styling */
+/* === Navbar Styling === */
 .navbar {
-  background-color: #00274C !important;
+  background-color: #00274C !important; /* Match header background */
 }
 
 nav a.nav-link {
   font-weight: 500;
+  color: white; /* Ensure links are white by default */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav-link.active,
 .nav-link:hover {
-  color: #FFCB05 !important;
+  color: #FFCB05 !important; /* Yellow highlight on hover and active */
 }
 
-/* Main Content Padding */
+/* === Main Content Padding === */
 main {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* Footer Styling */
+/* === Footer Styling === */
 footer {
-  background-color: #00274C !important;
+  background-color: #00274C !important; /* Match header/navbar background */
+  color: white; /* White text for contrast */
   margin-top: 2rem;
+  padding: 1rem 0; /* Padding for spacing */
+  text-align: center;
 }
 
-/* Carousel Caption Overlay */
+/* === Carousel Caption Overlay === */
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   border-radius: 10px;
   padding: 1rem;
 }
 
-/* Buttons */
+/* === Buttons === */
 .btn-outline-primary {
   font-weight: 600;
 }
 
-/* Unordered Lists */
+/* === Unordered Lists === */
 ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
+  list-style-type: square; /* Square bullet points */
+  padding-left: 1.5rem; /* Indent list */
+  margin-top: 0; /* Remove default margin for better spacing */
+  margin-bottom: 1rem; /* Space below lists */
 }
 
-/* Contact Icons and Entries */
+/* === Contact Icons and Entries === */
 .contact-icon {
   font-size: 3.5rem;
 }
@@ -76,14 +89,11 @@ ul {
 .contact-entry {
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 1rem; /* Space between entries */
 }
 
-/* Social Media Icon Colors */
+/* === Social Media Icon Colors === */
 .facebook-icon { color: #1877f2; }
 .instagram-icon { color: #e4405f; }
 .gmail-icon { color: #d44638; }
 .linkedin-icon { color: #0a66c2; }
-
-.navbar {
-  background-color: #00274C !important;
-}
