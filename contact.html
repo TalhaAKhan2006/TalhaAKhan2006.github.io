@@ -13,6 +13,19 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
+  <style>
+    .contact-icon {
+      font-size: 2rem;
+    }
+    .contact-entry {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+    .facebook-icon { color: #1877f2; }
+    .instagram-icon { color: #e4405f; }
+    .gmail-icon { color: #d44638; }
+    .linkedin-icon { color: #0a66c2; }
+  </style>
 </head>
 <body>
   <header class="bg-dark text-white text-center py-4">
@@ -46,32 +59,24 @@
   </nav>
 
   <main class="container my-5">
-    <h2 class="mb-4">Get in Touch</h2>
-    <form>
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+    <h2 class="mb-5 text-center">Get in Touch</h2>
+
+    <div class="row justify-content-center text-center g-4">
+      <div class="col-md-6 contact-entry">
+        <i class="fab fa-facebook contact-icon facebook-icon"></i>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/yourprofile" target="_blank">facebook.com/yourprofile</a></p>
       </div>
-
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="your@email.com" required />
+      <div class="col-md-6 contact-entry">
+        <i class="fab fa-instagram contact-icon instagram-icon"></i>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/yourprofile" target="_blank">instagram.com/yourprofile</a></p>
       </div>
-
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+      <div class="col-md-6 contact-entry">
+        <i class="fas fa-envelope contact-icon gmail-icon"></i>
+        <p><strong>Gmail:</strong> <a href="mailto:talhakhan@email.com">talhakhan@email.com</a></p>
       </div>
-
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-
-    <div class="mt-5">
-      <div class="d-flex flex-column gap-3">
-        <div><i class="fab fa-facebook fa-lg me-2"></i>Facebook: <a href="https://facebook.com/yourprofile" target="_blank">facebook.com/yourprofile</a></div>
-        <div><i class="fab fa-instagram fa-lg me-2"></i>Instagram: <a href="https://instagram.com/yourprofile" target="_blank">instagram.com/yourprofile</a></div>
-        <div><i class="fas fa-envelope fa-lg me-2"></i>Gmail: <a href="mailto:talhakhan@email.com">talhakhan@email.com</a></div>
-        <div><i class="fab fa-linkedin fa-lg me-2"></i>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></div>
+      <div class="col-md-6 contact-entry">
+        <i class="fab fa-linkedin contact-icon linkedin-icon"></i>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
       </div>
     </div>
   </main>
