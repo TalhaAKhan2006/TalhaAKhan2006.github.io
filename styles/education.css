@@ -1,50 +1,61 @@
 /* Education Section Styles */
 #education {
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* match projects */
+  border-radius: 30px;                         /* match projects */
+  margin: 40px auto;
+  max-width: 1100px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);  /* match projects */
 }
 
 #education h2 {
-  font-size: 2rem;
+  font-size: 2.2em;      /* closer to projects */
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
+  color: #00274C;        /* same dark blue as projects h2 */
 }
 
 .edu-row {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 40px;   /* increased spacing like projects */
 }
 
 .project-card {
+  display: block;          /* ensure clickable area */
+  width: 100%;
+  max-width: 1000px;
   text-decoration: none;
   color: inherit;
+  transition: transform 0.2s;
+  border-radius: 20px;
 }
 
 .edu-bubble {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3); /* match projects bubble */
   border-radius: 20px;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  max-width: 800px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);  /* same shadow */
+  gap: 24px;                                   /* match projects spacing */
+  transition: background 0.3s, transform 0.2s;
   width: 100%;
 }
 
-.edu-bubble:hover {
-  transform: translateY(-5px);
+.project-card:hover .edu-bubble {
+  transform: scale(1.015);
+  background-color: #f0f8ff;  /* same hover background as projects */
 }
 
 .edu-image {
   flex-shrink: 0;
-  width: 80px;
-  height: 80px;
-  margin-right: 1.2rem;
+  width: 250px;             /* match project image size */
+  height: 180px;
   border-radius: 12px;
+  object-fit: contain;
+  background-color: #eee;   /* subtle background for logos */
   overflow: hidden;
-  background-color: #eee;
 }
 
 .edu-image img {
@@ -54,31 +65,32 @@
 }
 
 .edu-text {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .edu-text h3 {
   margin: 0;
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.6em;          /* match project title size */
+  color: #0a3d62;            /* same as project-text h3 */
 }
 
 .edu-caption {
-  font-size: 1rem;
-  font-style: italic;
-  color: #777;
-  margin: 0.2rem 0 0.6rem;
+  font-size: 1em;
+  font-weight: 500;
+  color: #3c6382;            /* same as project-caption */
+  margin: 4px 0 12px 0;
+  font-style: normal;        /* remove italic for consistency */
 }
 
 .edu-text p {
-  margin: 0.2rem 0;
-  font-size: 1rem;
-  color: #333;
+  font-size: 1em;
+  color: #4b4b4b;            /* match project text color */
+  line-height: 1.5em;
+  margin: 0;
 }
 
 .edu-date {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.9em;
+  color: #666666;
+  margin-top: 8px;
 }
