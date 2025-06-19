@@ -76,6 +76,9 @@ p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+section h2 {
+  text-align: center;
+}
 
 /* About Section */
 #about {
@@ -90,34 +93,28 @@ p {
   border: 3px solid #1da1f2;
   box-shadow: 0 4px 8px rgba(29, 161, 242, 0.3);
 }
-/* Move this styling from .about-text to .about-container */
+
 .about-container {
   display: flex;
   gap: 20px;
   align-items: center;
   max-width: 900px;
   margin: auto;
-
-  /* Add these for the white box */
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 24px 32px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-
-  /* Ensure flex items stay in a row */
   flex-wrap: nowrap;
-  color: #ffffff; /* text color */
-}
-
-/* Remove background and padding from about-text */
-.about-text {
-  flex: 1; /* fill remaining space */
   color: #ffffff;
-  padding: 0; /* remove padding */
-  background: none; /* remove bg */
-  border-radius: 0; /* remove rounding */
 }
 
+.about-text {
+  flex: 1;
+  color: #ffffff;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+}
 
 .about-image {
   flex: 0 0 auto;
@@ -128,8 +125,8 @@ p {
   display: block;
 }
 
-.about-text h2{
-    color: #ffffff;
+.about-text h2 {
+  color: #ffffff;
 }
 .attribution {
   font-size: 0.75rem;
@@ -187,20 +184,17 @@ p {
   max-width: 1100px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
 }
-
 #projects h2 {
   font-size: 2.2em;
   text-align: center;
   margin-bottom: 40px;
   color: #00274C;
 }
-
 .project-row {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
-
 .project-bubble-link {
   display: block;
   width: 100%;
@@ -209,7 +203,6 @@ p {
   transition: transform 0.2s;
   border-radius: 20px;
 }
-
 .project-bubble {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
@@ -221,12 +214,10 @@ p {
   gap: 24px;
   transition: background 0.3s;
 }
-
 .project-bubble:hover {
   transform: scale(1.015);
   background-color: #f0f8ff;
 }
-
 .project-image {
   flex-shrink: 0;
   width: 250px;
@@ -234,45 +225,24 @@ p {
   border-radius: 12px;
   object-fit: cover;
 }
-
 .project-text {
   flex: 1;
 }
-
 .project-text h3 {
   margin: 0;
   font-size: 1.6em;
   color: #0a3d62;
 }
-
 .project-caption {
   font-size: 1em;
   font-weight: 500;
   color: #3c6382;
   margin: 4px 0 12px 0;
 }
-
 .project-text p {
   font-size: 1em;
   color: #4b4b4b;
   line-height: 1.5em;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .project-bubble {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .project-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .project-text {
-    margin-top: 16px;
-  }
 }
 
 /* Skills */
@@ -336,17 +306,14 @@ p {
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
 .download-btn:hover {
   background-color: #0a84d0;
   transform: translateY(-2px);
 }
-
 .download-bottom {
   text-align: center;
   margin-top: 2rem;
 }
-
 .contact-entry.social-icon:hover {
   transform: scale(1.2) translateY(-5px);
   filter: hue-rotate(20deg) brightness(1.1);
@@ -371,7 +338,7 @@ p {
   filter: brightness(1.2) saturate(1.2);
 }
 
-/* Email display beneath contact icons */
+/* Email Display */
 .email-display {
   text-align: center;
   margin-top: 1rem;
@@ -395,6 +362,47 @@ footer {
   color: #bbb;
   border-top: 1px solid #1da1f2;
 }
-section h2 {
-  text-align: center;
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .project-bubble {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-text {
+    margin-top: 16px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .about-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-name-image {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cursive-name {
+    font-size: 2.5rem;
+  }
 }
