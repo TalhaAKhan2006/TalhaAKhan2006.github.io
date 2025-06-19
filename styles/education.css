@@ -1,73 +1,109 @@
-/*Education*/
+/* education.css */
+
 #education {
-  padding: 40px 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 30px;
-  margin: 40px auto;
-  max-width: 1100px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  padding: 60px 20px;
+  background-color: #f9fbfd;
+  text-align: center;
 }
 
 #education h2 {
-  font-size: 2.2em;
-  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 40px;
-  color: #00274C;
+  color: #333;
 }
 
+/* Row wrapper for each bubble */
 .edu-row {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
+/* Card/bubble container */
+.project-card {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Main bubble */
 .edu-bubble {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 24px;
-  gap: 24px;
-  transition: background 0.3s, transform 0.2s;
-  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  max-width: 850px;
   width: 100%;
-  cursor: default;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
 .edu-bubble:hover {
-  transform: scale(1.015);
-  background-color: #f0f8ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
+/* Optional: left-side image */
+.edu-bubble::before {
+  content: "";
+  flex: 0 0 120px;
+  height: 120px;
+  background-image: url("../Images/umich-logo.png"); /* Replace with dynamic if needed */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+
+/* Right-side text area */
 .edu-text {
+  text-align: left;
+  padding: 20px 30px;
   flex: 1;
 }
 
 .edu-text h3 {
-  margin: 0;
-  font-size: 1.6em;
-  color: #0a3d62;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0077b6;
 }
 
 .edu-caption {
-  font-size: 1em;
-  font-weight: 500;
-  color: #3c6382;
-  margin: 4px 0 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 .edu-text p {
-  font-size: 1em;
-  color: #4b4b4b;
-  line-height: 1.5em;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
 }
 
 .edu-date {
-  font-style: italic;
-  color: #666;
-  font-size: 0.9em;
-  display: block;
-  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .edu-bubble {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edu-bubble::before {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 0;
+  }
+
+  .edu-text {
+    padding: 20px;
+  }
 }
