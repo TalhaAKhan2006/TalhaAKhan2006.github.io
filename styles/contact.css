@@ -1,1 +1,93 @@
+/* Contact */
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.contact-entry.social-icon {
+  background: transparent;
+  box-shadow: none;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.contact-entry.social-icon img {
+  width: 48px;
+  height: 48px;
+  transition: filter 0.3s ease;
+  filter: none;
+}
+.reach-out-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.download-btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  margin-top: 1rem;
+  background-color: #1da1f2;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.download-btn:hover {
+  background-color: #0a84d0;
+  transform: translateY(-2px);
+}
+.download-bottom {
+  text-align: center;
+  margin-top: 2rem;
+}
+.contact-entry.social-icon:hover {
+  transform: scale(1.2) translateY(-5px);
+  filter: hue-rotate(20deg) brightness(1.1);
+}
+.contact-entry.social-icon:focus {
+  outline: 2px solid #1da1f2;
+  outline-offset: 2px;
+}
 
+/* Social Icon Styles */
+.social-icon i {
+  font-size: 2.5rem;
+  transition: transform 0.2s, filter 0.3s;
+}
+.social-icon.facebook i   { color: #1877F2; }
+.social-icon.instagram i { color: #E4405F; }
+.social-icon.linkedin i  { color: #0077B5; }
+.social-icon.email i     { color: #EA4335; }
+.social-icon.github i    { color: #000000; }
+.social-icon:hover i {
+  transform: scale(1.2);
+  filter: brightness(1.2) saturate(1.2);
+}
+
+/* Email Display */
+.email-display {
+  text-align: center;
+  margin-top: 1rem;
+}
+.email-display a {
+  color: #1da1f2;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+.email-display a:hover {
+  text-decoration: underline;
+}
