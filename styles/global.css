@@ -103,3 +103,21 @@ footer {
     font-size: 2.5rem;
   }
 }
+/* Apply Segoe UI font to all headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Set the same font size for Contact, Skills, Experience, and About Me headers */
+#contact h2,
+#skills h2,
+#experience h2,
+section.fade-in-section > h3 { /* About Me header is an h3 in a fade-in-section */
+  font-size: 2rem; /* Adjust the size as you want */
+}
+
+/* Increase About Me paragraph font size */
+section.fade-in-section > h3 + p {
+  font-size: 1.2rem; /* Bigger font for About Me text */
+  line-height: 1.5;
+}
