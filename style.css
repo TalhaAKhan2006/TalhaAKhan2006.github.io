@@ -317,6 +317,12 @@ p {
   transition: filter 0.3s ease;
   filter: none;
 }
+.reach-out-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
 .contact-entry.social-icon:hover {
   transform: scale(1.2) translateY(-5px);
   filter: hue-rotate(20deg) brightness(1.1);
