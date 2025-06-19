@@ -181,7 +181,7 @@ p {
 /* Projects Section Layout */
 #projects {
   padding: 40px 20px;
-  background-color: #f5faff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 30px;
   margin: 40px auto;
   max-width: 1100px;
@@ -211,7 +211,7 @@ p {
 }
 
 .project-bubble {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
