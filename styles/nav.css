@@ -1,1 +1,27 @@
-
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background: #00274C;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav ul li {
+  font-weight: 700;
+  font-size: 1rem;
+}
+nav ul li a {
+  color: #eee;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #1da1f2;
+}
