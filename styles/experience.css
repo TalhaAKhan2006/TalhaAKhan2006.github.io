@@ -1,1 +1,14 @@
-
+/* Experience */
+.experience-item {
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #1da1f2;
+  padding-left: 1rem;
+}
+.experience-item h3 {
+  margin-bottom: 0.25rem;
+}
+.experience-item span {
+  font-style: italic;
+  color: #bbb;
+  font-size: 0.9rem;
+}
