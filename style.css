@@ -323,6 +323,30 @@ p {
   font-size: 1.2rem;
   margin: 1rem 0;
 }
+.download-btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  margin-top: 1rem;
+  background-color: #1da1f2;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:hover {
+  background-color: #0a84d0;
+  transform: translateY(-2px);
+}
+
+.download-bottom {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .contact-entry.social-icon:hover {
   transform: scale(1.2) translateY(-5px);
   filter: hue-rotate(20deg) brightness(1.1);
