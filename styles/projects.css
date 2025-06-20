@@ -7,17 +7,20 @@
   max-width: 1100px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
 }
+
 #projects h2 {
   font-size: 2.2em;
   text-align: center;
   margin-bottom: 40px;
   color: #00274C;
 }
+
 .project-row {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
+
 .project-bubble-link {
   display: block;
   width: 100%;
@@ -26,6 +29,7 @@
   transition: transform 0.2s;
   border-radius: 20px;
 }
+
 .project-bubble {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
@@ -37,10 +41,12 @@
   gap: 24px;
   transition: background 0.3s;
 }
+
 .project-bubble:hover {
   transform: scale(1.015);
   background-color: #f0f8ff;
 }
+
 .project-image {
   flex-shrink: 0;
   width: 250px;
@@ -48,22 +54,56 @@
   border-radius: 12px;
   object-fit: cover;
 }
+
 .project-text {
   flex: 1;
 }
+
 .project-text h3 {
   margin: 0;
   font-size: 1.6em;
   color: #0a3d62;
 }
+
 .project-caption {
   font-size: 1em;
   font-weight: 500;
   color: #3c6382;
   margin: 4px 0 12px 0;
 }
+
 .project-text p {
   font-size: 1em;
   color: #4b4b4b;
   line-height: 1.5em;
+}
+
+/* Responsive adjustments for Projects section */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-bubble {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .project-image {
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .project-text h3 {
+    font-size: 1.4em;
+  }
+
+  .project-caption,
+  .project-text p {
+    font-size: 0.95em;
+  }
 }
