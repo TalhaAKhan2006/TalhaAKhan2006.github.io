@@ -1,3 +1,17 @@
+#mouse-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  pointer-events: none; /* allows clicks through the glow */
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(104,225,253,0.5) 0%, rgba(104,225,253,0) 70%);
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out; /* smooth movement */
+  z-index: 1000; /* stay above content */
+}
+
 // Highlight active nav link on scroll
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
