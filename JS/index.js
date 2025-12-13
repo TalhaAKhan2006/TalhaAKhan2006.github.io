@@ -1,7 +1,7 @@
 const mouseGlow = document.getElementById('mouse-glow');
 
 document.addEventListener('mousemove', (e) => {
-  mouseGlow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  mouseGlow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
 });
 
 // Highlight active nav link on scroll
