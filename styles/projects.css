@@ -47,6 +47,22 @@
   background-color: #f0f8ff;
 }
 
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #68e1fd; /* light blue to match your theme */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #3aaedc; /* slightly darker on hover */
+}
+
 .project-image {
   flex-shrink: 0;
   width: 250px;
